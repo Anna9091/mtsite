@@ -67,16 +67,20 @@ http://www.templatemo.com/tm-472-blaster
 			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.3s">
 				<i class="fa fa-cloud"></i>
 					<h3>Fruits Input App</h3>
+
+
+
 					<label for="fruitName">ชื่อผลไม้:</label> 
 					<input type="text" id="fruitName">
 					<br>
 					<label for="fruitQuantity">จำนวนผลไม้:</label>
 					<input type="number" id="fruitQuantity">
 					<br>
-					<button onclick="addFruit()">เพิ่มผลไม้</button>
+					<button class="btn" onclick="addFruit()">เพิ่มผลไม้</button>
 				  
-					<button onclick="stopInput()">หยุด</button>
-				  
+					<button class="btn" onclick="stopInput()">หยุด</button>
+					<br>
+					<br>
 					<p>ผลไม้ที่ถูกสร้าง</p>
  					<pre id="result"></pre>
 
@@ -87,8 +91,31 @@ http://www.templatemo.com/tm-472-blaster
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.9s">
 				<i class="fa fa-globe"></i>
-					<h3>Launching</h3>
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt mollit anim id.</p>
+				<div class="panel">
+					<h3 class="text-center">Check your BMI</h3>
+					
+						<p id="introText" class="text-center">ป้อนน้ำหนักและส่วนสูงของคุณด้านล่างเพื่อตรวจสอบผลลัพธ์ BMI ของคุณ</p>
+						
+						<form>
+							<div id="weightInput">
+								<p>ใส่น้ำหนักของคุณที่นี่ (KG)</p>
+								 <input id="weight" type="number" pattern="[0-9]*" name="a" />
+							</div>
+							<div id="heightInput">
+								<p>ใส่ส่วนสูงของคุณที่นี่ (CM)</p>
+								 <input id="height" type="number" pattern="[0-9]*" name="b"/> 
+							</div>
+						 <button type="button" class="btn" onclick="calculate()">คำนวล BMI</button>
+					</form>
+					<br>
+					<br>
+					<pre id="results" class="text-center">ผลลัพธ์ BMI ของคุณจะปรากฏที่นี่</pre>
+					
+				</div>
+
+
+
+
 			</div>
 		</div>
 	</div>
