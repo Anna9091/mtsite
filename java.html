@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- SITE TITLE -->
+	<title>PORTFOLIO SUKIT KHOTHUUI</title>
+<!--
+
+Blaster Template
+
+http://www.templatemo.com/tm-472-blaster
+
+-->
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<!-- STYLESHEET CSS FILES -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/nivo-lightbox.css">
+	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<!-- navigation section -->
+<section class="navbar navbar-fixed-top custom-navbar" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand"><span class="bold">SUKIT KHOTHUUI</span></a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html" class="smoothScroll">HOME</a></li>
+				<li><a href="java.html" class="smoothScroll">JAVA</a></li>
+				<li><a href="api.html" class="smoothScroll">API</a></li>
+				<li><a href="contact.html" class="smoothScroll">CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+</section>
+<!-- home section -->
+<section id="home">
+	<div class="container">
+		
+	</div>		
+</section>
+
+
+<!-- about section -->
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 text-center">
+				<h1 class="heading bold">Lab ที่ชอบ</h1>
+
+			</div>
+			<div  data-wow-delay="0.3s">
+				
+					<h3>Fruits Input App</h3>
+
+
+
+					<label for="fruitName">ชื่อผลไม้:</label> 
+					<input type="text" id="fruitName">
+					<br>
+					<label for="fruitQuantity">จำนวนผลไม้:</label>
+					<input type="number" id="fruitQuantity">
+					<br>
+					<button class="btn" onclick="addFruit()">เพิ่มผลไม้</button>
+				  
+					<button class="btn" onclick="stopInput()">หยุด</button>
+					<br>
+					<br>
+					<p>ผลไม้ที่ถูกสร้าง</p>
+ 					<pre id="result"></pre>
+
+			</div>
+			<hr>
+			<br>
+			<div data-wow-delay="0.6s">
+			
+				<div id="real-time-clock">12:00:00</div>
+			</div>
+			<hr>
+			<br>
+			<div data-wow-delay="0.9s">
+				
+				<div class="panel">
+					<h3 class="text-center">Check your BMI</h3>
+					
+						<p id="introText" class="text-center">ป้อนน้ำหนักและส่วนสูงของคุณด้านล่างเพื่อตรวจสอบผลลัพธ์ BMI ของคุณ</p>
+						
+						<form>
+							<div id="weightInput">
+								<p>ใส่น้ำหนักของคุณที่นี่ (KG)</p>
+								 <input id="weight" type="number" pattern="[0-9]*" name="a" />
+							</div>
+							<div id="heightInput">
+								<p>ใส่ส่วนสูงของคุณที่นี่ (CM)</p>
+								 <input id="height" type="number" pattern="[0-9]*" name="b"/> 
+							</div>
+						 <button type="button" class="btn" onclick="calculate()">คำนวล BMI</button>
+					</form>
+					<br>
+					<br>
+					<pre id="results" class="text-center">ผลลัพธ์ BMI ของคุณจะปรากฏที่นี่</pre>
+					
+				</div>
+
+
+
+			</div>
+			<br>
+			<hr>
+			<div  data-wow-delay="1.2s">
+
+				<div class="calculator">
+								<div class="input" id="input"></div>
+								<div class="buttons">
+								<div class="operators">
+									<div>+</div>
+									<div>-</div>
+									<div>&times;</div>
+									<div>&divide;</div>
+								</div>
+								<div class="leftPanel">
+									<div class="numbers">
+									<div>7</div>
+									<div>8</div>
+									<div>9</div>
+									</div>
+									<div class="numbers">
+									<div>4</div>
+									<div>5</div>
+									<div>6</div>
+									</div>
+									<div class="numbers">
+									<div>1</div>
+									<div>2</div>
+									<div>3</div>
+									</div>
+									<div class="numbers">
+									<div>0</div>
+									<div>.</div>
+									<div id="clear">C</div>
+									</div>
+								</div>
+								<div class="equal" id="result1">=</div>
+								</div>
+							</div>
+
+
+			</div>
+<hr>
+<br>
+			<div data-wow-delay="1.5s">
+
+				<div id="quote-box">
+					<p class="quote">You can do anything but not everything</p>
+					<p class="source">David Allen<span class="citation">Making It All Work</span><span class="year">2009</span></p>
+				  </div>
+				  <button id="loadQuote">Show another quote</button>
+				</div>
+	
+			</div>
+			<div data-wow-delay="1.5s">
+				<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+				<script>
+					const xValues = ["ไก่กรอบ", "กระเพรา", "ข้าวผัด", "ต้มยำกุ้ง", "ไข่เจียว"];
+					const yValues = [55, 49, 44, 24, 15];
+					const barColors = [
+					  "#FFD500",
+					  "#FF3600",
+					  "#009BFF",
+					  "#00FF1B",
+					  "#8B00FF"
+					];
+					
+					new Chart("myChart", {
+					  type: "doughnut",
+					  data: {
+						labels: xValues,
+						datasets: [{
+						  backgroundColor: barColors,
+						  data: yValues
+						}]
+					  },
+					  options: {
+						title: {
+						  display: true,
+						  text: "อาหารที่ชอบ"
+						}
+					  }
+					});
+					</script>
+			</div>
+
+<Br>
+	<Br>
+		<Br>
+			<div data-wow-delay="1.5s">
+				<canvas id="myChart1" style="width:100%;max-width:600px"></canvas>
+				<h2>จำนวนผู้ป่วยใน จำเเนกสิทธิ์ (%)  </h2>
+				
+<script>
+	const xValues1 = ["ต.ค.-65","พ.ย.-65","ธ.ค.-66","ม.ค.-66","ก.พ.-66","มี่.ค.-66","เม.ย.-66","พ.ค.-66","มิ.ย.-66","ก.ค.-66","ส.ค.-66","ก.ย.-66",];
+	const yValues1 = [71,73,73,73,74,73,74,73,72,72,73,73];
+
+
+	new Chart("myChart1", {
+	  type: "line",
+	  data: {
+		labels: xValues1,
+		datasets: [{
+		  fill: false,
+		  lineTension: 0,
+		  backgroundColor: "rgba(0,0,255,1.0)",
+		  borderColor: "rgba(0,0,255,0.1)",
+		  data: yValues1
+		}]
+	  },
+	  options: {
+		legend: {display: false},
+		scales: {
+		  yAxes: [{ticks: {min: 6, max:100}}],
+		}
+	  }
+	});
+	</script>
+			</div>
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+			
+		</div>
+	</div>
+</section>
+
+<!-- footer section -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<ul class="social-icon">
+					<li><a class="fa fa-facebook wow bounceIn" data-wow-delay="0.3s" target="_parent"></a></li>
+					<li><a href="#" class="fa fa-twitter wow bounceIn" data-wow-delay="0.6s"></a></li>
+					<li><a href="#" class="fa fa-behance wow bounceIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fa fa-dribbble wow bounceIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fa fa-github wow bounceIn" data-wow-delay="0.9s"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!-- JAVASCRIPT JS FILES -->	
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/imagesloaded.min.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
